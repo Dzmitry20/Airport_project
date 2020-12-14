@@ -1,17 +1,15 @@
-package io;
+package academy.belhard.io;
 
-import Util.ResultWriterUtil;
+import academy.belhard.util.ResultWriterUtil;
 
 import java.io.FileWriter;
 import java.io.IOException;
-
-import static io.FilePathConstant.RESULT;
 
 public class FullResultWriter {
 
     public static void writeDBResult() {
 
-        try (FileWriter writer = new FileWriter(RESULT)) {
+        try (FileWriter writer = new FileWriter(FilePathConstant.RESULT)) {
 
             String result = ResultWriterUtil.writeResult(FullResultReader.readAll());
 

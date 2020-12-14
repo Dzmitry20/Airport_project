@@ -1,7 +1,7 @@
-package io;
+package academy.belhard.io;
 
-import Util.DBConnectionUtil;
-import entity.Flights;
+import academy.belhard.entity.Flights;
+import academy.belhard.util.DBConnectionUtil;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

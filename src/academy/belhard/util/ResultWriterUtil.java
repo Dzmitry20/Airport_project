@@ -1,6 +1,6 @@
-package Util;
+package academy.belhard.util;
 
-import entity.ResInfoFlight;
+import academy.belhard.entity.ResInfoFlight;
 
 import java.util.List;
 

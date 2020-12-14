@@ -1,7 +1,7 @@
-package io;
+package academy.belhard.io;
 
-import Util.DBConnectionUtil;
-import entity.Planes;
+import academy.belhard.util.DBConnectionUtil;
+import academy.belhard.entity.Planes;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -10,7 +10,7 @@ import java.util.List;
 
 public class PlaneWriter {
 
-    private List<Planes> planes;
+    private final List<Planes> planes;
     private static final String ADD = "INSERT INTO planes (id, mark, model,capacity,board_number) VALUES(?, ?, ?, ?, ?)";
 
     public PlaneWriter(List<Planes> planes) {

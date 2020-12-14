@@ -1,7 +1,7 @@
-package io;
+package academy.belhard.io;
 
-import Util.PlanesUtil;
-import entity.Planes;
+import academy.belhard.util.PilotsUtil;
+import academy.belhard.entity.Pilots;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -9,26 +9,26 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PlaneReader {
+public class PilotReader {
 
     private final String filePath;
 
-    public PlaneReader(String filePath) {
+    public PilotReader(String filePath) {
         this.filePath = filePath;
     }
 
-    public List<Planes> readItems() {
+    public List<Pilots> readItems() {
 
-        List<Planes> result = new ArrayList<>();
+        List<Pilots> result = new ArrayList<>();
 
         try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
 
             String s;
             while ((s = reader.readLine()) != null) {
 
-                Planes planes = PlanesUtil.toObject(s);
+                Pilots pilots = PilotsUtil.toObject(s);
 
-                result.add(planes);
+                result.add(pilots);
             }
         } catch (IOException e) {
             System.out.println("file error");
@@ -36,3 +36,7 @@ public class PlaneReader {
         return result;
     }
 }
+
+
+
+

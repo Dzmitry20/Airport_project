@@ -1,7 +1,7 @@
-package Util;
+package academy.belhard.util;
 
-import entity.Pilots;
-import entity.Rank;
+import academy.belhard.entity.Pilots;
+import academy.belhard.entity.Rank;
 
 public class PilotsUtil {
 

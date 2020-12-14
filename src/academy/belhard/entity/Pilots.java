@@ -1,17 +1,17 @@
-package entity;
+package academy.belhard.entity;
 
 public class Pilots {
     private int id;
     private String first_name;
     private String last_name;
-    private final Rank rank;
+    private final Rank pilot_rank;
     private String pilot_code;
 
-    public Pilots(int id, String first_name, String last_name, Rank rank, String pilot_code) {
+    public Pilots(int id, String first_name, String last_name, Rank pilot_rank, String pilot_code) {
         this.id = id;
         this.first_name = first_name;
         this.last_name = last_name;
-        this.rank = rank;
+        this.pilot_rank = pilot_rank;
         this.pilot_code = pilot_code;
     }
 
@@ -39,8 +39,8 @@ public class Pilots {
         this.last_name = last_name;
     }
 
-    public Rank getRank() {
-        return rank;
+    public Rank getPilot_rank() {
+        return pilot_rank;
     }
 
     public String getPilot_code() {
@@ -53,13 +53,16 @@ public class Pilots {
 
     @Override
     public String toString() {
-        return "Pilot{" +
+        return "Pilots{" +
                 "id=" + id +
                 ", first_name='" + first_name + '\'' +
                 ", last_name='" + last_name + '\'' +
-                ", rank='" + rank + '\'' +
+                ", pilot_rank=" + pilot_rank +
                 ", pilot_code='" + pilot_code + '\'' +
                 '}';
     }
 }
+
+
+
 

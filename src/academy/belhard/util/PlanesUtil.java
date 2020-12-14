@@ -1,6 +1,6 @@
-package Util;
+package academy.belhard.util;
 
-import entity.Planes;
+import academy.belhard.entity.Planes;
 
 public class PlanesUtil {
 

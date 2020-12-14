@@ -1,4 +1,4 @@
-package entity;
+package academy.belhard.entity;
 
 import java.util.Date;
 
@@ -48,7 +48,7 @@ public class Flights {
         return date;
     }
 
-    public void setDate_(Date date_) {
+    public void setDate_(Date date) {
         this.date = date;
     }
 
@@ -56,7 +56,7 @@ public class Flights {
         return time;
     }
 
-    public void setTime_(Date time_) {
+    public void setTime_(Date time) {
         this.time = time;
     }
 

@@ -1,4 +1,4 @@
-package Util;
+package academy.belhard.util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

@@ -1,4 +1,4 @@
-package io;
+package academy.belhard.io;
 
 public class FilePathConstant {
 

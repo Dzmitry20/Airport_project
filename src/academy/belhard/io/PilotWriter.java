@@ -1,7 +1,7 @@
-package io;
+package academy.belhard.io;
 
-import Util.DBConnectionUtil;
-import entity.Pilots;
+import academy.belhard.util.DBConnectionUtil;
+import academy.belhard.entity.Pilots;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -11,7 +11,7 @@ import java.util.List;
 public class PilotWriter {
 
     private final List<Pilots> pilots;
-    private static final String ADD = "INSERT INTO pilots (id, first_name,last_name,rank,pilot_code) VALUES(?, ?, ?, ?, ?)";
+    private static final String ADD = "INSERT INTO pilots (id, first_name,last_name,pilot_rank,pilot_code) VALUES(?, ?, ?, ?, ?)";
 
     public PilotWriter(List<Pilots> pilots) {
         this.pilots = pilots;
@@ -32,7 +32,7 @@ public class PilotWriter {
             statement.setInt(1, pilots.getId());
             statement.setString(2, pilots.getFirst_name());
             statement.setString(3, pilots.getLast_name());
-            statement.setString(4, String.valueOf(pilots.getRank()));
+            statement.setString(4, String.valueOf(pilots.getPilot_rank()));
             statement.setString(5, pilots.getPilot_code());
 
             statement.executeUpdate();

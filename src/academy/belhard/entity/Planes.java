@@ -1,4 +1,4 @@
-package entity;
+package academy.belhard.entity;
 
 public class Planes {
 

@@ -1,7 +1,7 @@
-package io;
+package academy.belhard.io;
 
-import Util.FlightsUtil;
-import entity.Flights;
+import academy.belhard.util.FlightsUtil;
+import academy.belhard.entity.Flights;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

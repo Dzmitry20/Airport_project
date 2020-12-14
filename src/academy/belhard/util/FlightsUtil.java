@@ -1,6 +1,6 @@
-package Util;
+package academy.belhard.util;
 
-import entity.Flights;
+import academy.belhard.entity.Flights;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

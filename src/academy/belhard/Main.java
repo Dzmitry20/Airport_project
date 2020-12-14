@@ -1,15 +1,16 @@
 package academy.belhard;
 
 
-import Util.ResultWriterUtil;
-import entity.Flights;
-import entity.Pilots;
-import entity.Planes;
-import io.*;
+import academy.belhard.util.ResultWriterUtil;
+import academy.belhard.entity.Flights;
+import academy.belhard.entity.Pilots;
+import academy.belhard.entity.Planes;
+import academy.belhard.io.*;
+
 
 import java.util.List;
 
-import static io.FilePathConstant.*;
+import static academy.belhard.io.FilePathConstant.*;
 
 public class Main {
 
