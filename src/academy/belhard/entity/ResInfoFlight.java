@@ -5,14 +5,14 @@ import java.sql.Time;
 
 public class ResInfoFlight {
 
-    String flight_number;
-    java.sql.Date date;
-    java.sql.Time time;
-    String board_number;
-    String plane;
-    int capacity;
-    String fio;
-    String pilot_number;
+    private String flight_number;
+    private Date date;
+    private Time time;
+    private String board_number;
+    private String plane;
+    private int capacity;
+    private String fio;
+    private String pilot_number;
 
     public ResInfoFlight(String flight_number, Date date, Time time, String board_number, String plane, int capacity, String fio, String pilot_number) {
         this.flight_number = flight_number;
